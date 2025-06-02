@@ -1,4 +1,5 @@
 pub enum List {
     Empty,
-    Elem(i32, List),
+    ElemThenEmpty(i32),
+    ElemThenNotEmpty(i32, Box<List>),
 }
